@@ -1,18 +1,26 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-bg: #f7f3ee;
-  --color-bg-alt: #f0ebe3;
-  --color-bg-dark: #1d1b19;
-  --color-border: #e0d8cd;
-  --color-border-light: #ebe5dc;
-  --color-text: #1d1b19;
-  --color-text-muted: #6b6560;
-  --color-text-faint: #9a9186;
-  --color-text-on-dark: #f0ebe3;
-  --color-text-on-dark-muted: #9a918680;
+  --color-bg: #F5F1EB;
+  --color-bg-alt: #ECE7DF;
+  --color-bg-accent: #2D3B2D;
+  --color-bg-accent-light: #3A4D3A;
 
-  --font-heading: var(--font-cormorant);
+  --color-green: #2D3B2D;
+  --color-green-light: #4A6148;
+  --color-sage: #7A8B72;
+  --color-sage-light: #A3B09B;
+
+  --color-text: #2D3B2D;
+  --color-text-secondary: #5E6B5A;
+  --color-text-faint: #8B9487;
+  --color-text-on-accent: #F5F1EB;
+  --color-text-on-accent-muted: #C2CBBC;
+
+  --color-border: #D4CFC6;
+  --color-border-dark: #4A5E48;
+
+  --font-heading: var(--font-dm-serif);
   --font-body: var(--font-inter);
 }
 
@@ -31,7 +39,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), Georgia, serif;
-  letter-spacing: -0.015em;
 }
 
 p {
@@ -44,6 +51,6 @@ img {
 }
 
 ::selection {
-  background: #d5cec4;
-  color: #1d1b19;
+  background: var(--color-sage-light);
+  color: var(--color-bg);
 }

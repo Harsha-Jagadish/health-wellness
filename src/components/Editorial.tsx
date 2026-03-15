@@ -6,7 +6,7 @@ export default function Editorial() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
           {/* Large food image */}
-          <div className="relative aspect-3/4 w-full overflow-hidden md:aspect-4/5">
+          <div className="relative aspect-3/4 w-full overflow-hidden rounded-3xl md:aspect-4/5">
             <Image
               src="/images/food.jpg"
               alt="Beautifully plated gourmet meal"
@@ -16,26 +16,26 @@ export default function Editorial() {
             />
           </div>
 
-          {/* Right column: copy + smaller image */}
+          {/* Right: copy + image */}
           <div className="flex flex-col justify-between gap-16">
             <div className="flex flex-1 flex-col justify-center">
-              <p className="mb-4 text-sm font-light uppercase tracking-[0.2em] text-text-muted">
+              <p className="mb-4 text-sm font-light uppercase tracking-[0.2em] text-sage">
                 The Standard
               </p>
-              <h2 className="text-4xl font-light leading-tight md:text-5xl">
+              <h2 className="text-4xl leading-tight md:text-5xl">
                 Where precision
                 <br />
                 meets <em>care.</em>
               </h2>
-              <p className="mt-8 max-w-sm text-lg font-light leading-relaxed text-text-muted">
+              <p className="mt-8 max-w-sm text-lg font-light leading-relaxed text-text-secondary">
                 Every recommendation is grounded in data. Every meal is crafted
                 with intention. Every interaction is handled with discretion.
               </p>
               <a
                 href="#apply"
-                className="group mt-10 inline-flex items-center gap-3 self-start text-sm tracking-wider text-text"
+                className="group mt-10 inline-flex items-center gap-3 self-start text-sm tracking-wider text-green"
               >
-                <span className="border-b border-text/20 pb-0.5 transition-colors group-hover:border-text">
+                <span className="border-b border-green/30 pb-0.5 transition-colors group-hover:border-green">
                   Explore membership
                 </span>
                 <svg
@@ -52,8 +52,7 @@ export default function Editorial() {
               </a>
             </div>
 
-            {/* Smaller ingredients image */}
-            <div className="relative aspect-video w-full overflow-hidden">
+            <div className="relative aspect-video w-full overflow-hidden rounded-3xl">
               <Image
                 src="/images/ingredients.jpg"
                 alt="Fresh premium ingredients"

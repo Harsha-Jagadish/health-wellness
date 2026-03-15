@@ -25,28 +25,28 @@ export default function Header() {
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "border-b border-border-light bg-bg/80 backdrop-blur-xl"
+            ? "border-b border-border bg-bg/90 backdrop-blur-xl"
             : "bg-transparent"
         }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-12">
-          <Link href="/" className="text-xl font-medium tracking-wide text-text">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-12">
+          <Link href="/" className="text-xl tracking-wide text-green">
             [Brand Name]
           </Link>
 
           <nav className="hidden items-center gap-10 md:flex">
-            <a href="#experience" className="text-sm tracking-wider text-text-muted transition-colors hover:text-text">
+            <a href="#experience" className="text-sm font-light tracking-wider text-text-secondary transition-colors hover:text-green">
               Experience
             </a>
-            <a href="#services" className="text-sm tracking-wider text-text-muted transition-colors hover:text-text">
+            <a href="#services" className="text-sm font-light tracking-wider text-text-secondary transition-colors hover:text-green">
               Services
             </a>
-            <a href="#trust" className="text-sm tracking-wider text-text-muted transition-colors hover:text-text">
+            <a href="#trust" className="text-sm font-light tracking-wider text-text-secondary transition-colors hover:text-green">
               Our Promise
             </a>
             <a
               href="#apply"
-              className="border border-text px-7 py-2.5 text-sm tracking-wider text-text transition-all duration-300 hover:bg-text hover:text-bg"
+              className="rounded-full bg-green px-8 py-2.5 text-sm tracking-wider text-text-on-accent transition-colors duration-300 hover:bg-green-light"
             >
               Apply
             </a>
@@ -57,21 +57,13 @@ export default function Header() {
             className="relative z-[60] flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
             aria-label="Toggle menu"
           >
-            <span
-              className={`block h-px w-5 bg-text transition-all duration-300 ${
-                menuOpen ? "translate-y-[4px] rotate-45" : ""
-              }`}
-            />
-            <span
-              className={`block h-px w-5 bg-text transition-all duration-300 ${
-                menuOpen ? "-translate-y-[2px] -rotate-45" : ""
-              }`}
-            />
+            <span className={`block h-px w-5 bg-green transition-all duration-300 ${menuOpen ? "translate-y-[4px] rotate-45" : ""}`} />
+            <span className={`block h-px w-5 bg-green transition-all duration-300 ${menuOpen ? "-translate-y-[2px] -rotate-45" : ""}`} />
           </button>
         </div>
       </header>
 
-      {/* Mobile fullscreen nav */}
+      {/* Mobile nav */}
       <div
         className={`fixed inset-0 z-50 flex flex-col items-center justify-center gap-10 bg-bg transition-all duration-500 md:hidden ${
           menuOpen ? "visible opacity-100" : "invisible opacity-0"
@@ -82,7 +74,7 @@ export default function Header() {
             key={label}
             href={`#${label === "Our Promise" ? "trust" : label.toLowerCase()}`}
             onClick={() => setMenuOpen(false)}
-            className="text-3xl font-light tracking-wide text-text"
+            className="text-2xl font-light tracking-wide text-text-secondary transition-colors hover:text-green"
           >
             {label}
           </a>
@@ -90,7 +82,7 @@ export default function Header() {
         <a
           href="#apply"
           onClick={() => setMenuOpen(false)}
-          className="mt-4 border border-text px-10 py-3.5 text-sm tracking-wider text-text transition-all duration-300 hover:bg-text hover:text-bg"
+          className="mt-4 rounded-full bg-green px-10 py-3.5 text-sm tracking-wider text-text-on-accent transition-colors duration-300 hover:bg-green-light"
         >
           Apply
         </a>
