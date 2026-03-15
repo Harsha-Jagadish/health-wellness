@@ -14,11 +14,11 @@ export default function Services() {
     },
     {
       title: "Personalized Meal Execution",
-      text: "Weekly meals crafted to your plan, prepared by vetted chefs, delivered with precision.",
+      text: "Ready-to-eat meals planned around your goals, preferences, and dietary needs — then prepared and delivered through vetted culinary partners.",
     },
     {
       title: "Ongoing Optimization",
-      text: "Your plan evolves with you. Regular check-ins, data review, and adjustments to keep you moving forward.",
+      text: "As your routine, data, or goals evolve, your meals and support evolve with you.",
     },
   ];
 
@@ -28,7 +28,7 @@ export default function Services() {
         {/* Heading */}
         <div className="mb-20 max-w-2xl lg:mb-28">
           <p className="mb-4 text-sm font-light uppercase tracking-[0.2em] text-text-faint">
-            What We Coordinate
+            What We Handle
           </p>
           <h2 className="text-4xl font-light leading-tight text-text-on-dark md:text-5xl">
             Every detail, <em>considered.</em>

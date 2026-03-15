@@ -28,8 +28,8 @@ export default function Editorial() {
                 meets <em>care.</em>
               </h2>
               <p className="mt-8 max-w-sm text-lg font-light leading-relaxed text-text-muted">
-                Every recommendation is grounded in data. Every meal is crafted
-                with intention. Every interaction is handled with discretion.
+                Data informs the plan. Meals make it real. Discretion keeps it
+                effortless.
               </p>
               <a
                 href="#apply"

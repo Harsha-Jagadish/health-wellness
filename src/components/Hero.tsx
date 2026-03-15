@@ -18,8 +18,8 @@ export default function Hero() {
             </h1>
 
             <p className="mt-8 max-w-md text-lg font-light leading-relaxed text-text-muted">
-              Diagnostics, expert guidance, and weekly meals — coordinated
-              through one trusted point of contact.
+              Diagnostics, expert guidance, and ready-to-eat weekly meals —
+              coordinated through one trusted point of contact.
             </p>
 
             <div className="mt-12 flex flex-wrap gap-4">
