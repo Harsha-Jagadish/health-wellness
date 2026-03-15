@@ -23,34 +23,32 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="bg-bg-dark py-28 lg:py-40">
+    <section id="services" className="bg-bg-elevated py-28 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         {/* Heading */}
         <div className="mb-20 max-w-2xl lg:mb-28">
-          <p className="mb-4 text-sm font-light uppercase tracking-[0.2em] text-text-faint">
+          <p className="mb-4 text-[13px] uppercase tracking-[0.25em] text-gold">
             What We Coordinate
           </p>
-          <h2 className="text-4xl font-light leading-tight text-text-on-dark md:text-5xl">
+          <h2 className="text-4xl font-normal leading-tight md:text-5xl">
             Every detail, <em>considered.</em>
           </h2>
         </div>
 
-        {/* Service rows */}
-        <div>
+        {/* Service cards — staggered grid */}
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
             <div
               key={i}
-              className={`grid gap-4 border-t border-white/10 py-12 md:grid-cols-12 md:items-baseline md:gap-8 md:py-16 ${
-                i === services.length - 1 ? "border-b" : ""
+              className={`group border border-border bg-bg-card p-10 transition-all duration-500 hover:border-gold/20 md:p-12 ${
+                i === 3 ? "lg:col-span-2" : ""
               }`}
             >
-              <span className="text-sm text-text-on-dark-muted md:col-span-1">
+              <span className="mb-6 block text-sm text-gold/30 transition-colors group-hover:text-gold/60">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="text-xl font-light text-text-on-dark md:col-span-4 md:text-2xl">
-                {s.title}
-              </h3>
-              <p className="max-w-lg text-base font-light leading-relaxed text-text-faint md:col-span-7">
+              <h3 className="mb-4 text-xl font-normal md:text-2xl">{s.title}</h3>
+              <p className="max-w-md text-[15px] font-light leading-relaxed text-text-secondary">
                 {s.text}
               </p>
             </div>

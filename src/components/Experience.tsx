@@ -22,30 +22,30 @@ export default function Experience() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         {/* Heading */}
         <div className="mb-20 max-w-xl lg:mb-28">
-          <p className="mb-4 text-sm font-light uppercase tracking-[0.2em] text-text-muted">
+          <p className="mb-4 text-[13px] uppercase tracking-[0.25em] text-gold">
             The Experience
           </p>
-          <h2 className="text-4xl font-light leading-tight md:text-5xl">
+          <h2 className="text-4xl font-normal leading-tight md:text-5xl">
             Health, simplified.
           </h2>
         </div>
 
-        {/* Steps — stacked rows */}
+        {/* Steps */}
         <div>
           {steps.map((step, i) => (
             <div
               key={step.num}
-              className={`grid gap-4 border-t border-border py-12 md:grid-cols-12 md:items-baseline md:gap-8 md:py-16 lg:py-20 ${
+              className={`grid gap-6 border-t border-border py-14 md:grid-cols-12 md:items-baseline md:gap-8 md:py-20 ${
                 i === steps.length - 1 ? "border-b" : ""
               }`}
             >
-              <span className="text-sm text-text-faint md:col-span-1">
+              <span className="text-2xl font-normal text-gold/30 md:col-span-1">
                 {step.num}
               </span>
-              <h3 className="text-2xl font-light md:col-span-5 md:text-3xl">
+              <h3 className="text-2xl font-normal md:col-span-5 md:text-3xl">
                 {step.title}
               </h3>
-              <p className="max-w-md text-base font-light leading-relaxed text-text-muted md:col-span-6 md:text-lg">
+              <p className="max-w-md text-base font-light leading-relaxed text-text-secondary md:col-span-6 md:text-lg">
                 {step.text}
               </p>
             </div>

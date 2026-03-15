@@ -7,15 +7,15 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-bg py-20 lg:py-28">
+    <footer className="border-t border-border bg-bg-elevated py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="grid gap-16 md:grid-cols-3 md:gap-12">
           {/* Brand */}
           <div>
-            <span className="text-xl font-medium tracking-wide text-text">
+            <span className="text-lg tracking-[0.15em] uppercase text-gold">
               [Brand Name]
             </span>
-            <p className="mt-5 max-w-xs text-base font-light leading-relaxed text-text-muted">
+            <p className="mt-5 max-w-xs text-[15px] font-light leading-relaxed text-text-secondary">
               Personalized health, quietly handled.
               <br />A premium Health-as-a-Service membership.
             </p>
@@ -23,7 +23,7 @@ export default function Footer() {
 
           {/* Nav */}
           <div>
-            <p className="mb-5 text-xs uppercase tracking-[0.2em] text-text-faint">
+            <p className="mb-5 text-[12px] uppercase tracking-[0.2em] text-gold-muted">
               Navigate
             </p>
             <nav className="flex flex-col gap-4">
@@ -31,7 +31,7 @@ export default function Footer() {
                 <a
                   key={l.href}
                   href={l.href}
-                  className="text-base font-light text-text-muted transition-colors hover:text-text"
+                  className="text-[15px] font-light text-text-secondary transition-colors hover:text-gold"
                 >
                   {l.label}
                 </a>
@@ -41,17 +41,17 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="mb-5 text-xs uppercase tracking-[0.2em] text-text-faint">
+            <p className="mb-5 text-[12px] uppercase tracking-[0.2em] text-gold-muted">
               Contact
             </p>
             <div className="flex flex-col gap-4">
               <a
                 href="mailto:hello@example.com"
-                className="text-base font-light text-text-muted transition-colors hover:text-text"
+                className="text-[15px] font-light text-text-secondary transition-colors hover:text-gold"
               >
                 hello@example.com
               </a>
-              <p className="text-base font-light text-text-muted">
+              <p className="text-[15px] font-light text-text-secondary">
                 By appointment only
               </p>
             </div>
@@ -59,14 +59,14 @@ export default function Footer() {
         </div>
 
         <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
-          <p className="text-xs tracking-wider text-text-faint">
+          <p className="text-xs tracking-[0.1em] text-text-faint">
             &copy; {new Date().getFullYear()} [Brand Name]. All rights reserved.
           </p>
           <div className="flex gap-8">
-            <a href="#" className="text-xs tracking-wider text-text-faint transition-colors hover:text-text-muted">
+            <a href="#" className="text-xs tracking-[0.1em] text-text-faint transition-colors hover:text-text-secondary">
               Privacy
             </a>
-            <a href="#" className="text-xs tracking-wider text-text-faint transition-colors hover:text-text-muted">
+            <a href="#" className="text-xs tracking-[0.1em] text-text-faint transition-colors hover:text-text-secondary">
               Terms
             </a>
           </div>

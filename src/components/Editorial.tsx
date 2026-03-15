@@ -14,28 +14,29 @@ export default function Editorial() {
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
+            <div className="absolute inset-0 bg-linear-to-t from-bg/40 to-transparent" />
           </div>
 
-          {/* Right column: copy + smaller image */}
+          {/* Right column: copy + image */}
           <div className="flex flex-col justify-between gap-16">
             <div className="flex flex-1 flex-col justify-center">
-              <p className="mb-4 text-sm font-light uppercase tracking-[0.2em] text-text-muted">
+              <p className="mb-4 text-[13px] uppercase tracking-[0.25em] text-gold">
                 The Standard
               </p>
-              <h2 className="text-4xl font-light leading-tight md:text-5xl">
+              <h2 className="text-4xl font-normal leading-tight md:text-5xl">
                 Where precision
                 <br />
-                meets <em>care.</em>
+                meets <em className="text-gold">care.</em>
               </h2>
-              <p className="mt-8 max-w-sm text-lg font-light leading-relaxed text-text-muted">
+              <p className="mt-8 max-w-sm text-lg font-light leading-relaxed text-text-secondary">
                 Every recommendation is grounded in data. Every meal is crafted
                 with intention. Every interaction is handled with discretion.
               </p>
               <a
                 href="#apply"
-                className="group mt-10 inline-flex items-center gap-3 self-start text-sm tracking-wider text-text"
+                className="group mt-10 inline-flex items-center gap-3 self-start text-[13px] uppercase tracking-[0.15em] text-gold"
               >
-                <span className="border-b border-text/20 pb-0.5 transition-colors group-hover:border-text">
+                <span className="border-b border-gold/30 pb-0.5 transition-colors group-hover:border-gold">
                   Explore membership
                 </span>
                 <svg
@@ -52,7 +53,7 @@ export default function Editorial() {
               </a>
             </div>
 
-            {/* Smaller ingredients image */}
+            {/* Ingredients image */}
             <div className="relative aspect-video w-full overflow-hidden">
               <Image
                 src="/images/ingredients.jpg"
@@ -61,6 +62,7 @@ export default function Editorial() {
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 45vw"
               />
+              <div className="absolute inset-0 bg-linear-to-t from-bg/30 to-transparent" />
             </div>
           </div>
         </div>

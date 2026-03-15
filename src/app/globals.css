@@ -1,18 +1,24 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-bg: #f7f3ee;
-  --color-bg-alt: #f0ebe3;
-  --color-bg-dark: #1d1b19;
-  --color-border: #e0d8cd;
-  --color-border-light: #ebe5dc;
-  --color-text: #1d1b19;
-  --color-text-muted: #6b6560;
-  --color-text-faint: #9a9186;
-  --color-text-on-dark: #f0ebe3;
-  --color-text-on-dark-muted: #9a918680;
+  --color-bg: #0F0F0E;
+  --color-bg-elevated: #171714;
+  --color-bg-card: #1C1C19;
+  --color-bg-contrast: #F4F1EC;
 
-  --font-heading: var(--font-cormorant);
+  --color-gold: #C1A87D;
+  --color-gold-muted: #9A845E;
+  --color-gold-bright: #D4BC8E;
+
+  --color-text: #EDEAE5;
+  --color-text-secondary: #A09B93;
+  --color-text-faint: #6B6760;
+  --color-text-dark: #1A1917;
+
+  --color-border: #2A2926;
+  --color-border-light: #353330;
+
+  --font-heading: var(--font-playfair);
   --font-body: var(--font-inter);
 }
 
@@ -31,7 +37,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), Georgia, serif;
-  letter-spacing: -0.015em;
 }
 
 p {
@@ -44,6 +49,6 @@ img {
 }
 
 ::selection {
-  background: #d5cec4;
-  color: #1d1b19;
+  background: var(--color-gold);
+  color: var(--color-bg);
 }

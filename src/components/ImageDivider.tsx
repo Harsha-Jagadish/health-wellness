@@ -10,7 +10,18 @@ export default function ImageDivider() {
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-bg-dark/20" />
+      <div className="absolute inset-0 bg-bg/50" />
+
+      {/* Centered quote */}
+      <div className="absolute inset-0 flex items-center justify-center px-6">
+        <blockquote className="max-w-xl text-center">
+          <p className="text-2xl font-normal leading-snug text-text md:text-3xl lg:text-4xl">
+            &ldquo;The best health decisions are the ones
+            <br className="hidden md:block" />
+            you never have to make.&rdquo;
+          </p>
+        </blockquote>
+      </div>
     </section>
   );
 }
