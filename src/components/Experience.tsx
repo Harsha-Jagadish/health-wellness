@@ -13,7 +13,7 @@ export default function Experience() {
     {
       num: "03",
       title: "Have It Handled",
-      text: "Weekly execution, ongoing optimization, and one point of contact for everything.",
+      text: "Weekly meal delivery, ongoing refinement, and one point of contact for everything.",
     },
   ];
 

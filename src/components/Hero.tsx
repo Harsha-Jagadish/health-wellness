@@ -33,8 +33,8 @@ export default function Hero() {
         </h1>
 
         <p className="mx-auto mt-8 max-w-lg text-lg font-light leading-relaxed text-text-secondary">
-          Diagnostics, expert guidance, and weekly meals — coordinated
-          through one trusted point of contact.
+          Diagnostics, expert guidance, and ready-to-eat weekly meals —
+          coordinated through one trusted point of contact.
         </p>
 
         <div className="mt-14 flex flex-wrap items-center justify-center gap-5">

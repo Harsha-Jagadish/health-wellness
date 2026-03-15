@@ -4,6 +4,7 @@ import Experience from "@/components/Experience";
 import ImageDivider from "@/components/ImageDivider";
 import Services from "@/components/Services";
 import Editorial from "@/components/Editorial";
+import Nutrition from "@/components/Nutrition";
 import Trust from "@/components/Trust";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -18,6 +19,7 @@ export default function Home() {
         <ImageDivider />
         <Services />
         <Editorial />
+        <Nutrition />
         <Trust />
         <CTA />
       </main>
